@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aroma Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf7f2;
+color:#333;
+}
+
+header{
+background:#2b1d0e;
+color:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#ffb347;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffb347;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin-top:15px;
+font-size:22px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff9800;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.4s;
+}
+
+.btn:hover{
+background:#ff6f00;
+transform:scale(1.05);
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#4e342e;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#ff9800;
+}
+
+.offer{
+background:#ff9800;
+color:white;
+}
+
+.quality{
+background:#43a047;
+color:white;
+}
+
+.review{
+font-style:italic;
+}
+
+.map iframe{
+width:100%;
+height:420px;
+border:none;
+border-radius:15px;
+}
+
+.whatsapp{
+text-align:center;
+}
+
+.whatsapp a{
+background:#25D366;
+padding:18px 40px;
+color:white;
+text-decoration:none;
+font-size:20px;
+border-radius:50px;
+display:inline-block;
+transition:.3s;
+}
+
+.whatsapp a:hover{
+background:#0ea94d;
+}
+
+footer{
+background:#2b1d0e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">☕ Aroma Cafe</div>
+
+<nav>
+
+<a href="#menu">Menu</a>
+<a href="#offers">Offers</a>
+<a href="#quality">Quality</a>
+<a href="#reviews">Reviews</a>
+<a href="#map">Map</a>
+<a href="#contact">WhatsApp</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to Aroma Cafe</h1>
+
+<p>Fresh Coffee • Delicious Food • Cozy Ambience</p>
+
+<a href="#menu" class="btn">Explore Menu</a>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">Our Menu</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>☕ Coffee</h3>
+<p>Espresso, Cappuccino, Latte, Mocha</p>
+</div>
+
+<div class="card">
+<h3>🥤 Cold Drinks</h3>
+<p>Cold Coffee, Milkshakes, Mojitos</p>
+</div>
+
+<div class="card">
+<h3>🍔 Snacks</h3>
+<p>Burger, Sandwich, Fries, Pizza</p>
+</div>
+
+<div class="card">
+<h3>🍰 Desserts</h3>
+<p>Cakes, Brownies, Ice Cream</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="offers">
+
+<h2 class="title">Special Offers</h2>
+
+<div class="grid">
+
+<div class="card offer">
+<h3>20% OFF</h3>
+<p>On all Coffee every Monday.</p>
+</div>
+
+<div class="card offer">
+<h3>Buy 1 Get 1</h3>
+<p>Cold Coffee on Fridays.</p>
+</div>
+
+<div class="card offer">
+<h3>Student Discount</h3>
+<p>10% Discount with College ID.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="quality">
+
+<h2 class="title">Quality</h2>
+
+<div class="grid">
+
+<div class="card quality">
+<h3>Premium Beans</h3>
+<p>Freshly roasted coffee beans.</p>
+</div>
+
+<div class="card quality">
+<h3>Fresh Ingredients</h3>
+<p>Prepared daily with hygiene.</p>
+</div>
+
+<div class="card quality">
+<h3>Best Service</h3>
+<p>Fast and friendly staff.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2 class="title">Customer Reviews</h2>
+
+<div class="grid">
+
+<div class="card review">
+⭐⭐⭐⭐⭐
+<p>"Amazing Coffee and great ambience."</p>
+</div>
+
+<div class="card review">
+⭐⭐⭐⭐⭐
+<p>"One of the best cafes in town!"</p>
+</div>
+
+<div class="card review">
+⭐⭐⭐⭐⭐
+<p>"Loved the food and quick service."</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="map">
+
+<h2 class="title">Find Us</h2>
+
+<div class="map">
+
+<iframe src="https://maps.google.com/maps?q=bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</div>
+
+</section>
+
+<section id="contact" class="whatsapp">
+
+<h2 class="title">Contact on WhatsApp</h2>
+
+<a href="https://wa.me/919999999999">
+Chat on WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Aroma Cafe | Designed with ❤️
+
+</footer>
+
+</body>
+</html>s
